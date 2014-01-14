@@ -12,11 +12,21 @@
 
 #include <iostream>
 
+#include "lms.h"
+
 using namespace std;
 
 
 int main(int argc, char *argv[])
 {
+	lms sick;
+
+	sick.StartUp();
+
+	while(1)
+	{
+		sick.Scan();
+	}
 
 	return 0;
 }

@@ -11,15 +11,19 @@
  */
 
 #include <vector>
+#include <iostream>
+
 
 class lms
 {
 	public:
 		lms();
+		bool StartUp();
+		bool Scan();
 		virtual ~lms() {};
 
 	protected:
-		bool StartUp();
+		bool ScanRequest();
 		bool read();
 
 	protected: // Configuration Variables

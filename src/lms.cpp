@@ -26,7 +26,10 @@ lms::lms()
 bool lms::StartUp()
 {
 	bool rslt = false;
+
 	// Verify Connection
+	cout << "SICK LMS291 starting up...\n\n";
+
 	// Init Hardware
 	rslt = true;
 
@@ -34,6 +37,27 @@ bool lms::StartUp()
 }
 
 
+// Read a measurement from the lms.
+bool lms::Scan()
+{
+	bool rslt = false;
+
+
+	return(rslt);
+}
+
+
+// Send a measurement request to the lms.
+bool lms::ScanRequest()
+{
+	bool rslt = false;
+
+
+	return(rslt);
+}
+
+
+// Read data from the lms.
 bool lms::read()
 {
 	bool rslt = false;
